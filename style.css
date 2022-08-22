@@ -1,24 +1,23 @@
 * {
-  background-color: wheat;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-color: darkgreen;
+  font-size: 24px;
 }
 
 header,
-h1,
-header ul,
-header ul li {
-  background-color: darkgreen;
+footer {
+  background-color: beige;
+  color: black;
 }
 
 h1 {
   font-size: 50px;
   position: relative;
   margin-top: 40px;
+  color: teal;
 }
 
 header {
-  color: whitesmoke;
   border-style: solid;
   width: 100%;
 }
@@ -32,15 +31,14 @@ header ul li {
   display: inline;
   padding: 20px;
   text-align: right;
+  color: whitesmoke;
 }
 
-nav ul li:hover {
-Border-style: solid;
-border-color: aqua;
-}
-
-nav ul li:active {
-    scroll-behavior: smooth;
+nav ul li:hover,
+footer ul li:hover {
+  border-style: solid;
+  border-color: aqua;
+  font-weight: bold;
 }
 
 body {
@@ -66,7 +64,7 @@ main section {
   margin: auto;
 }
 
-article {
+.aboutmeform {
   text-align: center;
   justify-content: center;
   padding: 30px;
@@ -77,17 +75,50 @@ article {
   justify-content: center;
 }
 
+.hunterpic:hover {
+  width: 20%;
+}
+
 .firstproj {
   border-style: solid;
-  width: 90%;
-  justify-content: center;
-  align-items: center;
+  width: 800px;
+  justify-content: start;
+  align-items: flex-end;
+  height: 800px;
+  background-image: url(./images/Screenshot\ 2022-08-22\ 162103.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#firstprojtext {
+  background-color: beige;
+  color: teal;
+  border-style: solid;
+  border: 2px;
+}
+
+#sampleprojtext {
+  background-color: beige;
+  color: teal;
+  border-style: solid;
+}
+
+.firstproj:hover,
+figure:hover {
+  border-style: solid;
+  border-color: aqua;
 }
 
 figure {
   border-style: solid;
-  width: 35%;
-  /* background-image: url(./images/background\ 1.jpg); */
+  width: 300px;
+  height: 300px;
+  background-image: url(./images/Screenshot\ 2022-08-22\ 142208.png);
+  background-repeat: repeat-x;
+}
+
+figure h3 {
+  margin-top: 200px;
 }
 
 footer section {
