@@ -3,6 +3,7 @@
   border-color: darkgreen;
   font-size: 24px;
   border-radius: 10px;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -14,6 +15,7 @@
 html {
   background-image: url(./images/farrow-and-ball-st-antoine-cream-light-beige-wallpaper-tiled-098439.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 header,
@@ -21,6 +23,7 @@ footer {
   /* background-color: var(--background-fill); */
   background-image: url(./images/images.jpg);
   color: black;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -52,6 +55,7 @@ footer ul li:hover {
   border-style: solid;
   border-color: var(--hovercolor);
   font-weight: bold;
+  background-color: var(--background-fill);
 }
 
 body {
@@ -81,16 +85,19 @@ main section {
   text-align: center;
   justify-content: center;
   padding: 30px;
+  max-width: 1400px;
+  margin: auto;
+  color: var(--textcolor);
 }
 
 .hunterpic {
-  width: 15%;
+  width: 20%;
   justify-content: center;
   box-shadow: 5px 5px 5px gray;
 }
 
 .hunterpic:hover {
-  width: 20%;
+  width: 25%;
 }
 
 .firstproj {
@@ -152,4 +159,40 @@ footer section {
 footer ul li {
   display: inline;
   padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .firstproj {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hunterpic {
+    width: 60%;
+  }
+
+  .firstproj {
+    width: 70%;
+  }
+
+  ul li,
+  ul li a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .firstproj {
+    width: 90%;
+  }
+
+  ul li,
+  ul li a {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
 }
