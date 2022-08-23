@@ -2,11 +2,24 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-color: darkgreen;
   font-size: 24px;
+  border-radius: 10px;
+}
+
+:root {
+  --background-fill: beige;
+  --textcolor: teal;
+  --hovercolor: aqua;
+}
+
+html {
+  background-image: url(./images/farrow-and-ball-st-antoine-cream-light-beige-wallpaper-tiled-098439.jpg);
+  background-size: cover;
 }
 
 header,
 footer {
-  background-color: beige;
+  /* background-color: var(--background-fill); */
+  background-image: url(./images/images.jpg);
   color: black;
 }
 
@@ -37,7 +50,7 @@ header ul li {
 nav ul li:hover,
 footer ul li:hover {
   border-style: solid;
-  border-color: aqua;
+  border-color: var(--hovercolor);
   font-weight: bold;
 }
 
@@ -73,6 +86,7 @@ main section {
 .hunterpic {
   width: 15%;
   justify-content: center;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .hunterpic:hover {
@@ -91,22 +105,22 @@ main section {
 }
 
 #firstprojtext {
-  background-color: beige;
-  color: teal;
+  background-color: var(--background-fill);
+  color: var(--textcolor);
   border-style: solid;
   border: 2px;
 }
 
 #sampleprojtext {
-  background-color: beige;
-  color: teal;
+  background-color: var(--background-fill);
+  color: var(--textcolor);
   border-style: solid;
 }
 
 .firstproj:hover,
 figure:hover {
   border-style: solid;
-  border-color: aqua;
+  border-color: var(--hovercolor);
 }
 
 figure {
